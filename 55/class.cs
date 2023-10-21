@@ -8,13 +8,13 @@ namespace class1
 {
     public class Product
     {
-        public string weight;
+        public int weight;
         public string cost;
         public string volume;
         public string name;
         public string fragility;
 
-        public Product(string weight, string cost, string volume, string name, string fragility)
+        public Product(int weight, string cost, string volume, string name, string fragility)
         {
 
             this.weight = weight;
@@ -27,7 +27,7 @@ namespace class1
 
     public static class Factory
     {
-        public static Product Create(string weight, string cost, string volume, string name, string fragility)
+        public static Product Create(int weight, string cost, string volume, string name, string fragility)
         {
             return new Product(weight, cost, volume, name, fragility);
         }
